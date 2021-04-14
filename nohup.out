@@ -1,0 +1,920 @@
+Watching for file changes with StatReloader
+[15/May/2019 11:45:02] "GET / HTTP/1.1" 200 5212
+[15/May/2019 11:45:08] "GET /admin HTTP/1.1" 301 0
+[15/May/2019 11:45:08] "GET /admin/ HTTP/1.1" 302 0
+[15/May/2019 11:45:08] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 1821
+[15/May/2019 11:45:09] "GET /static/admin/css/login.css HTTP/1.1" 200 1233
+[15/May/2019 11:45:09] "GET /static/admin/css/responsive.css HTTP/1.1" 200 17944
+[15/May/2019 11:45:09] "GET /static/admin/css/base.css HTTP/1.1" 200 16378
+[15/May/2019 11:45:09] "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+[15/May/2019 11:45:09] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+[15/May/2019 11:45:09] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+[15/May/2019 11:45:18] "POST /admin/login/?next=/admin/ HTTP/1.1" 200 1951
+[15/May/2019 11:45:18] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+[15/May/2019 11:45:25] "POST /admin/login/?next=/admin/ HTTP/1.1" 200 1951
+[15/May/2019 11:45:30] "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+[15/May/2019 11:45:30] "GET /admin/ HTTP/1.1" 200 4511
+[15/May/2019 11:45:30] "GET /static/admin/css/dashboard.css HTTP/1.1" 200 412
+[15/May/2019 11:45:30] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+[15/May/2019 11:45:30] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[15/May/2019 11:45:36] "GET /admin/blog/post/add/ HTTP/1.1" 200 10008
+[15/May/2019 11:45:37] "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 363
+[15/May/2019 11:45:37] "GET /static/admin/js/calendar.js HTTP/1.1" 200 7777
+[15/May/2019 11:45:37] "GET /static/admin/js/core.js HTTP/1.1" 200 7135
+[15/May/2019 11:45:37] "GET /admin/jsi18n/ HTTP/1.1" 200 7722
+[15/May/2019 11:45:37] "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 20274
+[15/May/2019 11:45:37] "GET /static/admin/js/actions.js HTTP/1.1" 200 6538
+[15/May/2019 11:45:37] "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1530
+[15/May/2019 11:45:37] "GET /static/admin/css/forms.css HTTP/1.1" 200 8518
+[15/May/2019 11:45:37] "GET /static/admin/js/change_form.js HTTP/1.1" 200 712
+[15/May/2019 11:45:37] "GET /static/admin/js/urlify.js HTTP/1.1" 200 8972
+[15/May/2019 11:45:37] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 6918
+[15/May/2019 11:45:37] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 495
+[15/May/2019 11:45:37] "GET /static/admin/css/widgets.css HTTP/1.1" 200 10340
+[15/May/2019 11:45:38] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 128820
+[15/May/2019 11:45:39] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 271751
+[15/May/2019 11:45:40] "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+[15/May/2019 11:45:40] "GET /static/admin/img/icon-clock.svg HTTP/1.1" 200 677
+[15/May/2019 11:45:40] "GET /static/admin/img/calendar-icons.svg HTTP/1.1" 200 1094
+[15/May/2019 11:57:57] "GET /admin/blog/category/add/?_to_field=id&_popup=1 HTTP/1.1" 200 3047
+[15/May/2019 11:57:57] "GET /admin/jsi18n/ HTTP/1.1" 200 7722
+[15/May/2019 11:58:02] "POST /admin/blog/category/add/?_to_field=id&_popup=1 HTTP/1.1" 200 369
+[15/May/2019 11:58:02] "GET /static/admin/js/popup_response.js HTTP/1.1" 200 569
+----------------------------------------
+Exception happened during processing of request from ('223.73.111.250', 16884)
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/socketserver.py", line 651, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.6/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.6/socketserver.py", line 721, in __init__
+    self.handle()
+  File "/usr/local/lib/python3.6/dist-packages/django/core/servers/basehttp.py", line 169, in handle
+    self.handle_one_request()
+  File "/usr/local/lib/python3.6/dist-packages/django/core/servers/basehttp.py", line 179, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/lib/python3.6/socket.py", line 586, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+----------------------------------------
+----------------------------------------
+Exception happened during processing of request from ('223.73.111.250', 16883)
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/socketserver.py", line 651, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.6/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.6/socketserver.py", line 721, in __init__
+    self.handle()
+  File "/usr/local/lib/python3.6/dist-packages/django/core/servers/basehttp.py", line 171, in handle
+    self.handle_one_request()
+  File "/usr/local/lib/python3.6/dist-packages/django/core/servers/basehttp.py", line 179, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/lib/python3.6/socket.py", line 586, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+----------------------------------------
+[15/May/2019 11:58:07] "GET /admin/blog/tag/add/?_to_field=id&_popup=1 HTTP/1.1" 200 3022
+[15/May/2019 11:58:07] "GET /admin/jsi18n/ HTTP/1.1" 200 7722
+[15/May/2019 11:58:19] "POST /admin/blog/tag/add/?_to_field=id&_popup=1 HTTP/1.1" 200 381
+----------------------------------------
+Exception happened during processing of request from ('223.73.111.250', 16890)
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/socketserver.py", line 651, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.6/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.6/socketserver.py", line 721, in __init__
+    self.handle()
+  File "/usr/local/lib/python3.6/dist-packages/django/core/servers/basehttp.py", line 171, in handle
+    self.handle_one_request()
+  File "/usr/local/lib/python3.6/dist-packages/django/core/servers/basehttp.py", line 179, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/lib/python3.6/socket.py", line 586, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+----------------------------------------
+[15/May/2019 11:58:29] "POST /admin/blog/post/add/ HTTP/1.1" 302 0
+[15/May/2019 11:58:29] "GET /admin/blog/post/ HTTP/1.1" 200 4520
+[15/May/2019 11:58:29] "GET /admin/jsi18n/ HTTP/1.1" 200 7722
+[15/May/2019 11:58:29] "GET /static/admin/css/changelists.css HTTP/1.1" 200 6170
+[15/May/2019 11:58:29] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+[15/May/2019 11:58:29] "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+[15/May/2019 11:58:35] "GET / HTTP/1.1" 200 6770
+[15/May/2019 11:58:37] "GET /post/1/ HTTP/1.1" 200 9400
+[15/May/2019 11:58:49] "GET /admin/blog/post/ HTTP/1.1" 200 4336
+[15/May/2019 11:58:49] "GET /admin/jsi18n/ HTTP/1.1" 200 7722
+[15/May/2019 11:58:53] "GET /admin/blog/post/1/change/ HTTP/1.1" 200 11392
+[15/May/2019 11:58:53] "GET /admin/jsi18n/ HTTP/1.1" 200 7722
+[15/May/2019 11:58:54] "GET /static/admin/img/tooltag-arrowright.svg HTTP/1.1" 200 280
+[15/May/2019 11:59:17] "POST /admin/blog/post/1/change/ HTTP/1.1" 302 0
+[15/May/2019 11:59:17] "GET /admin/blog/post/ HTTP/1.1" 200 4520
+[15/May/2019 11:59:17] "GET /admin/jsi18n/ HTTP/1.1" 200 7722
+[15/May/2019 11:59:27] "GET / HTTP/1.1" 200 6770
+[15/May/2019 11:59:29] "GET /post/1/ HTTP/1.1" 200 9434
+[15/May/2019 12:00:41] "GET / HTTP/1.1" 200 6770
+[15/May/2019 12:00:58] "GET / HTTP/1.1" 200 6770
+[15/May/2019 12:01:51] "GET / HTTP/1.1" 200 6770
+[15/May/2019 12:01:52] "GET /static/blog/css/pace.css HTTP/1.1" 200 177
+[15/May/2019 12:01:52] "GET /static/blog/css/custom.css HTTP/1.1" 200 14654
+[15/May/2019 12:01:52] "GET /static/blog/css/bootstrap.min.css HTTP/1.1" 200 117150
+[15/May/2019 12:01:52] "GET /static/blog/js/jquery-2.1.3.min.js HTTP/1.1" 200 84319
+[15/May/2019 12:01:52] "GET /static/blog/js/pace.min.js HTTP/1.1" 200 12331
+[15/May/2019 12:01:52] "GET /static/blog/js/bootstrap.min.js HTTP/1.1" 200 35452
+[15/May/2019 12:01:52] "GET /static/blog/js/modernizr.custom.js HTTP/1.1" 200 8371
+[15/May/2019 12:01:52] "GET /static/blog/js/script.js HTTP/1.1" 200 4310
+[15/May/2019 12:01:57] "GET /post/1/ HTTP/1.1" 200 9434
+[15/May/2019 12:02:14] "GET / HTTP/1.1" 200 6770
+[15/May/2019 12:02:21] "GET /admin HTTP/1.1" 301 0
+[15/May/2019 12:02:21] "GET /admin/ HTTP/1.1" 200 5721
+[15/May/2019 12:02:25] "GET /admin/blog/post/ HTTP/1.1" 200 4336
+[15/May/2019 12:02:25] "GET /admin/jsi18n/ HTTP/1.1" 200 7722
+[15/May/2019 12:02:27] "GET /admin/blog/post/1/change/ HTTP/1.1" 200 11401
+[15/May/2019 12:02:27] "GET /admin/jsi18n/ HTTP/1.1" 200 7722
+[15/May/2019 12:02:57] "GET /post/1 HTTP/1.1" 301 0
+[15/May/2019 12:02:59] "GET /post/1 HTTP/1.1" 301 0
+[15/May/2019 12:02:59] "GET /post/1/ HTTP/1.1" 200 9434
+[15/May/2019 12:02:59] "GET /static/blog/js/pace.min.js HTTP/1.1" 200 12331
+[15/May/2019 12:02:59] "GET /static/blog/css/pace.css HTTP/1.1" 200 177
+[15/May/2019 12:02:59] "GET /static/blog/css/custom.css HTTP/1.1" 200 14654
+[15/May/2019 12:02:59] "GET /static/blog/js/bootstrap.min.js HTTP/1.1" 200 35452
+[15/May/2019 12:02:59] "GET /static/blog/js/jquery-2.1.3.min.js HTTP/1.1" 200 84319
+[15/May/2019 12:02:59] "GET /static/blog/js/modernizr.custom.js HTTP/1.1" 200 8371
+[15/May/2019 12:02:59] "GET /static/blog/css/bootstrap.min.css HTTP/1.1" 200 117150
+[15/May/2019 12:02:59] "GET /static/blog/js/script.js HTTP/1.1" 200 4310
+[15/May/2019 12:03:00] "GET /static/blog/js/bootstrap.min.js HTTP/1.1" 200 35452
+[15/May/2019 12:03:01] "GET /static/blog/js/pace.min.js HTTP/1.1" 200 12331
+[15/May/2019 12:03:01] "GET /static/blog/js/modernizr.custom.js HTTP/1.1" 200 8371
+[15/May/2019 12:03:01] "GET /static/blog/js/script.js HTTP/1.1" 200 4310
+[15/May/2019 12:07:28] "GET / HTTP/1.1" 200 6770
+[15/May/2019 12:07:31] "GET /post/1/ HTTP/1.1" 200 8912
+----------------------------------------
+Exception happened during processing of request from ('223.73.111.250', 11440)
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/socketserver.py", line 651, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.6/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.6/socketserver.py", line 721, in __init__
+    self.handle()
+  File "/usr/local/lib/python3.6/dist-packages/django/core/servers/basehttp.py", line 171, in handle
+    self.handle_one_request()
+  File "/usr/local/lib/python3.6/dist-packages/django/core/servers/basehttp.py", line 179, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/lib/python3.6/socket.py", line 586, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+----------------------------------------
+[15/May/2019 12:08:37] "GET /post/1/ HTTP/1.1" 200 8912
+[15/May/2019 12:08:39] "GET / HTTP/1.1" 200 6770
+[15/May/2019 12:09:04] "GET / HTTP/1.1" 200 6770
+----------------------------------------
+Exception happened during processing of request from ('223.73.111.250', 56246)
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/socketserver.py", line 651, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.6/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.6/socketserver.py", line 721, in __init__
+    self.handle()
+  File "/usr/local/lib/python3.6/dist-packages/django/core/servers/basehttp.py", line 171, in handle
+    self.handle_one_request()
+  File "/usr/local/lib/python3.6/dist-packages/django/core/servers/basehttp.py", line 179, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/lib/python3.6/socket.py", line 586, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+----------------------------------------
+[15/May/2019 12:49:40] "GET / HTTP/1.1" 200 6770
+[15/May/2019 12:49:44] "GET /post/1/ HTTP/1.1" 200 8912
+Not Found: /http:/110.249.212.46/testget
+[15/May/2019 13:23:25] "GET http://110.249.212.46/testget?q=23333&port=80 HTTP/1.1" 404 1721
+----------------------------------------
+Exception happened during processing of request from ('110.249.212.46', 44908)
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/socketserver.py", line 651, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.6/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.6/socketserver.py", line 721, in __init__
+    self.handle()
+  File "/usr/local/lib/python3.6/dist-packages/django/core/servers/basehttp.py", line 171, in handle
+    self.handle_one_request()
+  File "/usr/local/lib/python3.6/dist-packages/django/core/servers/basehttp.py", line 179, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/lib/python3.6/socket.py", line 586, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+----------------------------------------
+Not Found: /http:/110.249.212.46/testget
+[15/May/2019 13:23:42] "GET http://110.249.212.46/testget?q=23333&port=80 HTTP/1.1" 404 1721
+----------------------------------------
+Exception happened during processing of request from ('110.249.212.46', 46468)
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/socketserver.py", line 651, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.6/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.6/socketserver.py", line 721, in __init__
+    self.handle()
+  File "/usr/local/lib/python3.6/dist-packages/django/core/servers/basehttp.py", line 171, in handle
+    self.handle_one_request()
+  File "/usr/local/lib/python3.6/dist-packages/django/core/servers/basehttp.py", line 179, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/lib/python3.6/socket.py", line 586, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+----------------------------------------
+Not Found: /http:/110.249.212.46/testget
+[15/May/2019 13:24:02] "GET http://110.249.212.46/testget?q=23333&port=80 HTTP/1.1" 404 1721
+----------------------------------------
+Exception happened during processing of request from ('110.249.212.46', 46758)
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/socketserver.py", line 651, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.6/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.6/socketserver.py", line 721, in __init__
+    self.handle()
+  File "/usr/local/lib/python3.6/dist-packages/django/core/servers/basehttp.py", line 171, in handle
+    self.handle_one_request()
+  File "/usr/local/lib/python3.6/dist-packages/django/core/servers/basehttp.py", line 179, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/lib/python3.6/socket.py", line 586, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+----------------------------------------
+[15/May/2019 13:48:08] "GET / HTTP/1.1" 200 6770
+[15/May/2019 13:48:08] "GET /static/blog/js/pace.min.js HTTP/1.1" 304 0
+[15/May/2019 13:48:08] "GET /static/blog/css/bootstrap.min.css HTTP/1.1" 304 0
+[15/May/2019 13:48:08] "GET /static/blog/js/jquery-2.1.3.min.js HTTP/1.1" 304 0
+[15/May/2019 13:48:08] "GET /static/blog/css/pace.css HTTP/1.1" 304 0
+[15/May/2019 13:48:08] "GET /static/blog/js/bootstrap.min.js HTTP/1.1" 304 0
+[15/May/2019 13:48:08] "GET /static/blog/js/modernizr.custom.js HTTP/1.1" 304 0
+[15/May/2019 13:48:08] "GET /static/blog/css/custom.css HTTP/1.1" 304 0
+[15/May/2019 13:48:08] "GET /static/blog/js/script.js HTTP/1.1" 304 0
+[15/May/2019 13:49:18] "GET / HTTP/1.1" 200 6770
+[15/May/2019 13:49:18] "GET /static/blog/js/pace.min.js HTTP/1.1" 200 12331
+[15/May/2019 13:49:18] "GET /static/blog/css/custom.css HTTP/1.1" 200 14654
+[15/May/2019 13:49:18] "GET /static/blog/css/pace.css HTTP/1.1" 200 177
+[15/May/2019 13:49:18] "GET /static/blog/js/bootstrap.min.js HTTP/1.1" 200 35452
+[15/May/2019 13:49:18] "GET /static/blog/js/modernizr.custom.js HTTP/1.1" 200 8371
+[15/May/2019 13:49:18] "GET /static/blog/js/script.js HTTP/1.1" 200 4310
+[15/May/2019 13:49:18] "GET /static/blog/css/bootstrap.min.css HTTP/1.1" 200 117150
+[15/May/2019 13:49:18] "GET /static/blog/js/jquery-2.1.3.min.js HTTP/1.1" 200 84319
+[15/May/2019 13:49:20] "GET /static/blog/js/bootstrap.min.js HTTP/1.1" 200 35452
+[15/May/2019 13:49:20] "GET /static/blog/js/pace.min.js HTTP/1.1" 200 12331
+[15/May/2019 13:49:20] "GET /static/blog/js/modernizr.custom.js HTTP/1.1" 200 8371
+[15/May/2019 13:49:20] "GET /static/blog/js/script.js HTTP/1.1" 200 4310
+[15/May/2019 13:57:15] "GET /post/1/ HTTP/1.1" 200 8912
+[15/May/2019 13:57:21] "GET / HTTP/1.1" 200 6770
+[15/May/2019 14:06:34] "GET /archives/2019/5/ HTTP/1.1" 200 6770
+[15/May/2019 14:27:45] "GET / HTTP/1.1" 200 6770
+Not Found: /manager/html
+[15/May/2019 14:28:33] "GET /manager/html HTTP/1.1" 404 2963
+----------------------------------------
+Exception happened during processing of request from ('210.210.26.37', 4423)
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/socketserver.py", line 651, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.6/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.6/socketserver.py", line 721, in __init__
+    self.handle()
+  File "/usr/local/lib/python3.6/dist-packages/django/core/servers/basehttp.py", line 171, in handle
+    self.handle_one_request()
+  File "/usr/local/lib/python3.6/dist-packages/django/core/servers/basehttp.py", line 179, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/lib/python3.6/socket.py", line 586, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+----------------------------------------
+[15/May/2019 14:50:59] "GET / HTTP/1.1" 200 6770
+[15/May/2019 14:51:01] "GET /static/blog/js/jquery-2.1.3.min.js HTTP/1.1" 200 84319
+[15/May/2019 14:51:05] "GET /static/blog/js/bootstrap.min.js HTTP/1.1" 200 35452
+[15/May/2019 14:51:07] "GET /static/blog/js/pace.min.js HTTP/1.1" 200 12331
+[15/May/2019 14:51:08] "GET /static/blog/js/modernizr.custom.js HTTP/1.1" 200 8371
+[15/May/2019 14:51:08] "GET /static/blog/js/script.js HTTP/1.1" 200 4310
+[15/May/2019 15:13:05] "GET / HTTP/1.1" 200 6770
+[15/May/2019 15:22:49] "GET / HTTP/1.1" 200 6770
+[15/May/2019 15:34:26] "GET /?tdsourcetag=s_pcqq_aiomsg HTTP/1.1" 200 6770
+[15/May/2019 15:34:26] "GET /static/blog/css/pace.css HTTP/1.1" 200 177
+[15/May/2019 15:34:26] "GET /static/blog/css/custom.css HTTP/1.1" 200 14654
+[15/May/2019 15:34:26] "GET /static/blog/js/pace.min.js HTTP/1.1" 200 12331
+[15/May/2019 15:34:26] "GET /static/blog/css/bootstrap.min.css HTTP/1.1" 200 117150
+[15/May/2019 15:34:26] "GET /static/blog/js/bootstrap.min.js HTTP/1.1" 200 35452
+[15/May/2019 15:34:26] "GET /static/blog/js/modernizr.custom.js HTTP/1.1" 200 8371
+[15/May/2019 15:34:26] "GET / HTTP/1.1" 200 6770
+[15/May/2019 15:34:26] "GET /static/blog/js/script.js HTTP/1.1" 200 4310
+[15/May/2019 15:34:27] "GET /static/blog/js/jquery-2.1.3.min.js HTTP/1.1" 200 84319
+Not Found: /favicon.ico
+[15/May/2019 15:34:28] "GET /favicon.ico HTTP/1.1" 404 2960
+[15/May/2019 15:34:32] "GET / HTTP/1.1" 200 6770
+[15/May/2019 15:34:32] "GET /static/blog/css/pace.css HTTP/1.1" 200 177
+[15/May/2019 15:34:32] "GET /static/blog/css/bootstrap.min.css HTTP/1.1" 200 117150
+[15/May/2019 15:34:32] "GET /static/blog/css/custom.css HTTP/1.1" 200 14654
+[15/May/2019 15:34:32] "GET /static/blog/js/pace.min.js HTTP/1.1" 200 12331
+[15/May/2019 15:34:32] "GET /static/blog/js/bootstrap.min.js HTTP/1.1" 200 35452
+[15/May/2019 15:34:32] "GET /static/blog/js/jquery-2.1.3.min.js HTTP/1.1" 200 84319
+[15/May/2019 15:34:32] "GET /static/blog/js/modernizr.custom.js HTTP/1.1" 200 8371
+[15/May/2019 15:34:32] "GET /static/blog/js/script.js HTTP/1.1" 200 4310
+[15/May/2019 15:34:34] "GET /?tdsourcetag=s_pcqq_aiomsg HTTP/1.1" 200 6770
+Not Found: /favicon.ico
+[15/May/2019 15:34:34] "GET /favicon.ico HTTP/1.1" 404 2960
+[15/May/2019 15:34:34] "GET /static/blog/css/bootstrap.min.css HTTP/1.1" 200 117150
+[15/May/2019 15:34:35] "GET /static/blog/css/pace.css HTTP/1.1" 200 177
+[15/May/2019 15:34:35] "GET /static/blog/js/pace.min.js HTTP/1.1" 200 12331
+[15/May/2019 15:34:35] "GET /static/blog/css/custom.css HTTP/1.1" 200 14654
+[15/May/2019 15:34:35] "GET /static/blog/js/bootstrap.min.js HTTP/1.1" 200 35452
+----------------------------------------
+Exception happened during processing of request from ('223.73.111.45', 17638)
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/socketserver.py", line 651, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.6/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.6/socketserver.py", line 721, in __init__
+    self.handle()
+  File "/usr/local/lib/python3.6/dist-packages/django/core/servers/basehttp.py", line 171, in handle
+    self.handle_one_request()
+  File "/usr/local/lib/python3.6/dist-packages/django/core/servers/basehttp.py", line 179, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/lib/python3.6/socket.py", line 586, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+----------------------------------------
+----------------------------------------
+Exception happened during processing of request from ('223.73.111.45', 17639)
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/socketserver.py", line 651, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.6/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.6/socketserver.py", line 721, in __init__
+    self.handle()
+  File "/usr/local/lib/python3.6/dist-packages/django/core/servers/basehttp.py", line 171, in handle
+    self.handle_one_request()
+  File "/usr/local/lib/python3.6/dist-packages/django/core/servers/basehttp.py", line 179, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/lib/python3.6/socket.py", line 586, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+----------------------------------------
+----------------------------------------
+Exception happened during processing of request from ('223.73.111.45', 17640)
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/socketserver.py", line 651, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.6/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.6/socketserver.py", line 721, in __init__
+    self.handle()
+  File "/usr/local/lib/python3.6/dist-packages/django/core/servers/basehttp.py", line 171, in handle
+    self.handle_one_request()
+  File "/usr/local/lib/python3.6/dist-packages/django/core/servers/basehttp.py", line 179, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/lib/python3.6/socket.py", line 586, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+----------------------------------------
+----------------------------------------
+Exception happened during processing of request from ('223.73.111.45', 17643)
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/socketserver.py", line 651, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.6/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.6/socketserver.py", line 721, in __init__
+    self.handle()
+  File "/usr/local/lib/python3.6/dist-packages/django/core/servers/basehttp.py", line 171, in handle
+    self.handle_one_request()
+  File "/usr/local/lib/python3.6/dist-packages/django/core/servers/basehttp.py", line 179, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/lib/python3.6/socket.py", line 586, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+----------------------------------------
+----------------------------------------
+Exception happened during processing of request from ('223.73.111.45', 17641)
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/socketserver.py", line 651, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.6/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.6/socketserver.py", line 721, in __init__
+    self.handle()
+  File "/usr/local/lib/python3.6/dist-packages/django/core/servers/basehttp.py", line 171, in handle
+    self.handle_one_request()
+  File "/usr/local/lib/python3.6/dist-packages/django/core/servers/basehttp.py", line 179, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/lib/python3.6/socket.py", line 586, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+----------------------------------------
+[15/May/2019 15:34:35] "GET /static/blog/js/jquery-2.1.3.min.js HTTP/1.1" 200 84319
+[15/May/2019 15:34:36] "GET /static/blog/js/modernizr.custom.js HTTP/1.1" 200 8371
+[15/May/2019 15:34:37] "GET / HTTP/1.1" 200 6770
+Not Found: /favicon.ico
+[15/May/2019 15:34:37] "GET /favicon.ico HTTP/1.1" 404 2960
+[15/May/2019 15:34:38] "GET /static/blog/js/script.js HTTP/1.1" 200 4310
+[15/May/2019 15:34:39] "GET /post/1/ HTTP/1.1" 200 8912
+Not Found: /favicon.ico
+[15/May/2019 15:34:39] "GET /favicon.ico HTTP/1.1" 404 2960
+[15/May/2019 15:34:40] "GET /static/blog/js/bootstrap.min.js HTTP/1.1" 200 35452
+[15/May/2019 15:34:40] "GET /static/blog/css/custom.css HTTP/1.1" 200 14654
+[15/May/2019 15:34:40] "GET /static/blog/css/pace.css HTTP/1.1" 200 177
+[15/May/2019 15:34:40] "GET /static/blog/js/pace.min.js HTTP/1.1" 200 12331
+[15/May/2019 15:34:40] "GET /static/blog/css/bootstrap.min.css HTTP/1.1" 200 117150
+[15/May/2019 15:34:40] "GET /static/blog/js/jquery-2.1.3.min.js HTTP/1.1" 200 84319
+[15/May/2019 15:34:41] "GET /static/blog/js/modernizr.custom.js HTTP/1.1" 200 8371
+[15/May/2019 15:34:43] "GET /static/blog/js/script.js HTTP/1.1" 200 4310
+[15/May/2019 15:34:49] "GET /post/1 HTTP/1.1" 301 0
+[15/May/2019 15:34:50] "GET /category/1/ HTTP/1.1" 200 6770
+Not Found: /favicon.ico
+[15/May/2019 15:34:50] "GET /favicon.ico HTTP/1.1" 404 2960
+Not Found: /favicon.ico
+[15/May/2019 15:34:52] "GET /favicon.ico HTTP/1.1" 404 2960
+[15/May/2019 15:34:53] "GET /category/1/ HTTP/1.1" 200 6770
+Not Found: /favicon.ico
+[15/May/2019 15:34:53] "GET /favicon.ico HTTP/1.1" 404 2960
+[15/May/2019 15:34:54] "GET /archives/2019/5/ HTTP/1.1" 200 6770
+Not Found: /favicon.ico
+[15/May/2019 15:34:54] "GET /favicon.ico HTTP/1.1" 404 2960
+[15/May/2019 15:34:56] "GET /post/1/ HTTP/1.1" 200 8913
+Not Found: /favicon.ico
+[15/May/2019 15:34:56] "GET /favicon.ico HTTP/1.1" 404 2960
+[15/May/2019 15:34:58] "GET /post/1/ HTTP/1.1" 200 8913
+[15/May/2019 15:35:02] "GET /category/1 HTTP/1.1" 301 0
+[15/May/2019 15:35:07] "GET /static/blog/css/pace.css HTTP/1.1" 200 177
+[15/May/2019 15:35:07] "GET /static/blog/css/custom.css HTTP/1.1" 200 14654
+[15/May/2019 15:35:07] "GET /static/blog/js/bootstrap.min.js HTTP/1.1" 200 35452
+[15/May/2019 15:35:07] "GET /static/blog/css/bootstrap.min.css HTTP/1.1" 200 117150
+[15/May/2019 15:35:07] "GET /static/blog/js/jquery-2.1.3.min.js HTTP/1.1" 200 84319
+[15/May/2019 15:35:08] "GET /?tdsourcetag=s_pcqq_aiomsg HTTP/1.1" 200 6771
+[15/May/2019 15:35:09] "GET /static/blog/js/pace.min.js HTTP/1.1" 200 12331
+[15/May/2019 15:35:10] "GET /static/blog/js/modernizr.custom.js HTTP/1.1" 200 8371
+[15/May/2019 15:35:10] "GET /static/blog/js/script.js HTTP/1.1" 200 4310
+[15/May/2019 15:35:10] "GET /category/1/ HTTP/1.1" 200 6771
+[15/May/2019 15:35:16] "GET /static/blog/css/pace.css HTTP/1.1" 200 177
+[15/May/2019 15:35:16] "GET /static/blog/css/custom.css HTTP/1.1" 200 14654
+[15/May/2019 15:35:16] "GET /static/blog/js/bootstrap.min.js HTTP/1.1" 200 35452
+[15/May/2019 15:35:16] "GET /static/blog/js/jquery-2.1.3.min.js HTTP/1.1" 200 84319
+[15/May/2019 15:35:16] "GET /static/blog/css/bootstrap.min.css HTTP/1.1" 200 117150
+[15/May/2019 15:35:17] "GET /static/blog/js/pace.min.js HTTP/1.1" 200 12331
+[15/May/2019 15:35:18] "GET /static/blog/js/modernizr.custom.js HTTP/1.1" 200 8371
+[15/May/2019 15:35:18] "GET /static/blog/js/script.js HTTP/1.1" 200 4310
+[15/May/2019 15:35:21] "GET /post/1 HTTP/1.1" 301 0
+[15/May/2019 15:35:21] "GET /post/1/ HTTP/1.1" 200 8913
+[15/May/2019 15:35:21] "GET /static/blog/css/bootstrap.min.css HTTP/1.1" 200 117150
+[15/May/2019 15:35:21] "GET /static/blog/css/pace.css HTTP/1.1" 200 177
+[15/May/2019 15:35:21] "GET /static/blog/css/custom.css HTTP/1.1" 200 14654
+[15/May/2019 15:35:21] "GET /static/blog/js/bootstrap.min.js HTTP/1.1" 200 35452
+[15/May/2019 15:35:21] "GET /static/blog/js/pace.min.js HTTP/1.1" 200 12331
+[15/May/2019 15:35:21] "GET /static/blog/js/modernizr.custom.js HTTP/1.1" 200 8371
+[15/May/2019 15:35:21] "GET /static/blog/js/script.js HTTP/1.1" 200 4310
+[15/May/2019 15:35:22] "GET /static/blog/js/jquery-2.1.3.min.js HTTP/1.1" 200 84319
+[15/May/2019 15:35:23] "GET /static/blog/css/custom.css HTTP/1.1" 200 14654
+[15/May/2019 15:35:23] "GET /static/blog/css/pace.css HTTP/1.1" 200 177
+[15/May/2019 15:35:23] "GET /static/blog/js/pace.min.js HTTP/1.1" 200 12331
+[15/May/2019 15:35:23] "GET /static/blog/css/bootstrap.min.css HTTP/1.1" 200 117150
+[15/May/2019 15:35:23] "GET /static/blog/js/bootstrap.min.js HTTP/1.1" 200 35452
+[15/May/2019 15:35:24] "GET /static/blog/js/jquery-2.1.3.min.js HTTP/1.1" 200 84319
+[15/May/2019 15:35:26] "GET /static/blog/js/modernizr.custom.js HTTP/1.1" 200 8371
+----------------------------------------
+Exception happened during processing of request from ('42.236.10.78', 54440)
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/socketserver.py", line 651, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.6/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.6/socketserver.py", line 721, in __init__
+    self.handle()
+  File "/usr/local/lib/python3.6/dist-packages/django/core/servers/basehttp.py", line 171, in handle
+    self.handle_one_request()
+  File "/usr/local/lib/python3.6/dist-packages/django/core/servers/basehttp.py", line 179, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/lib/python3.6/socket.py", line 586, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+----------------------------------------
+----------------------------------------
+Exception happened during processing of request from ('42.236.10.93', 25952)
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/socketserver.py", line 651, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.6/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.6/socketserver.py", line 721, in __init__
+    self.handle()
+  File "/usr/local/lib/python3.6/dist-packages/django/core/servers/basehttp.py", line 171, in handle
+    self.handle_one_request()
+  File "/usr/local/lib/python3.6/dist-packages/django/core/servers/basehttp.py", line 179, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/lib/python3.6/socket.py", line 586, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+----------------------------------------
+[15/May/2019 15:35:27] "GET /category/1 HTTP/1.1" 301 0
+[15/May/2019 15:35:27] "GET /category/1/ HTTP/1.1" 200 6771
+[15/May/2019 15:35:27] "GET /static/blog/css/pace.css HTTP/1.1" 200 177
+[15/May/2019 15:35:27] "GET /static/blog/css/custom.css HTTP/1.1" 200 14654
+[15/May/2019 15:35:27] "GET /static/blog/js/bootstrap.min.js HTTP/1.1" 200 35452
+[15/May/2019 15:35:27] "GET /static/blog/js/pace.min.js HTTP/1.1" 200 12331
+[15/May/2019 15:35:27] "GET /static/blog/css/bootstrap.min.css HTTP/1.1" 200 117150
+[15/May/2019 15:35:27] "GET /static/blog/js/modernizr.custom.js HTTP/1.1" 200 8371
+[15/May/2019 15:35:27] "GET /static/blog/js/script.js HTTP/1.1" 200 4310
+[15/May/2019 15:35:28] "GET /static/blog/js/jquery-2.1.3.min.js HTTP/1.1" 200 84319
+[15/May/2019 15:35:36] "GET /archives/2019/5 HTTP/1.1" 301 0
+[15/May/2019 15:35:47] "GET /archives/2019/5/ HTTP/1.1" 200 6771
+[15/May/2019 15:35:54] "POST /comment/post/1/ HTTP/1.1" 302 0
+[15/May/2019 15:35:54] "GET /post/1/ HTTP/1.1" 200 9148
+Not Found: /favicon.ico
+[15/May/2019 15:35:54] "GET /favicon.ico HTTP/1.1" 404 2960
+[15/May/2019 15:35:56] "GET /static/blog/css/pace.css HTTP/1.1" 200 177
+[15/May/2019 15:35:56] "GET /static/blog/css/bootstrap.min.css HTTP/1.1" 200 117150
+[15/May/2019 15:35:56] "GET /static/blog/css/custom.css HTTP/1.1" 200 14654
+[15/May/2019 15:35:59] "GET /comment/post/1 HTTP/1.1" 301 0
+[15/May/2019 15:35:59] "GET /static/blog/js/jquery-2.1.3.min.js HTTP/1.1" 200 84319
+[15/May/2019 15:36:01] "GET /comment/post/1/ HTTP/1.1" 302 0
+----------------------------------------
+Exception happened during processing of request from ('180.163.220.66', 7602)
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/socketserver.py", line 651, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.6/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.6/socketserver.py", line 721, in __init__
+    self.handle()
+  File "/usr/local/lib/python3.6/dist-packages/django/core/servers/basehttp.py", line 171, in handle
+    self.handle_one_request()
+  File "/usr/local/lib/python3.6/dist-packages/django/core/servers/basehttp.py", line 179, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/lib/python3.6/socket.py", line 586, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+----------------------------------------
+[15/May/2019 15:36:05] "GET /archives/2019/5 HTTP/1.1" 301 0
+[15/May/2019 15:36:05] "GET /post/1/ HTTP/1.1" 200 9148
+[15/May/2019 15:36:05] "GET /archives/2019/5/ HTTP/1.1" 200 6771
+[15/May/2019 15:36:06] "GET /static/blog/css/custom.css HTTP/1.1" 200 14654
+[15/May/2019 15:36:06] "GET /static/blog/css/bootstrap.min.css HTTP/1.1" 200 117150
+[15/May/2019 15:36:06] "GET /static/blog/js/jquery-2.1.3.min.js HTTP/1.1" 200 84319
+[15/May/2019 15:36:07] "GET /static/blog/js/pace.min.js HTTP/1.1" 200 12331
+[15/May/2019 15:36:07] "GET /static/blog/js/modernizr.custom.js HTTP/1.1" 200 8371
+[15/May/2019 15:36:08] "GET /static/blog/css/bootstrap.min.css HTTP/1.1" 200 117150
+[15/May/2019 15:36:08] "GET /static/blog/css/pace.css HTTP/1.1" 200 177
+[15/May/2019 15:36:08] "GET /static/blog/css/custom.css HTTP/1.1" 200 14654
+[15/May/2019 15:36:09] "GET /static/blog/js/jquery-2.1.3.min.js HTTP/1.1" 200 84319
+[15/May/2019 15:36:09] "GET /static/blog/js/script.js HTTP/1.1" 200 4310
+[15/May/2019 15:36:09] "GET /static/blog/js/bootstrap.min.js HTTP/1.1" 200 35452
+[15/May/2019 15:36:09] "GET /static/blog/js/bootstrap.min.js HTTP/1.1" 200 35452
+[15/May/2019 15:36:10] "GET /static/blog/js/pace.min.js HTTP/1.1" 200 12331
+[15/May/2019 15:36:11] "GET /static/blog/js/modernizr.custom.js HTTP/1.1" 200 8371
+[15/May/2019 15:36:11] "GET /static/blog/js/script.js HTTP/1.1" 200 4310
+[15/May/2019 15:36:22] "GET /comment/post/1 HTTP/1.1" 301 0
+[15/May/2019 15:36:28] "GET /comment/post/1/ HTTP/1.1" 302 0
+[15/May/2019 15:36:35] "GET /post/1/ HTTP/1.1" 200 9148
+[15/May/2019 15:36:46] "GET /static/blog/css/custom.css HTTP/1.1" 200 14654
+[15/May/2019 15:36:46] "GET /static/blog/css/pace.css HTTP/1.1" 200 177
+[15/May/2019 15:36:46] "GET /static/blog/js/bootstrap.min.js HTTP/1.1" 200 35452
+[15/May/2019 15:36:46] "GET /static/blog/js/pace.min.js HTTP/1.1" 200 12331
+[15/May/2019 15:36:46] "GET /static/blog/js/jquery-2.1.3.min.js HTTP/1.1" 200 84319
+[15/May/2019 15:36:46] "GET /static/blog/css/bootstrap.min.css HTTP/1.1" 200 117150
+[15/May/2019 15:36:48] "GET /static/blog/js/modernizr.custom.js HTTP/1.1" 200 8371
+[15/May/2019 15:36:49] "GET /static/blog/js/script.js HTTP/1.1" 200 4310
+[15/May/2019 15:50:27] "GET / HTTP/1.1" 200 6771
+[15/May/2019 15:50:27] "GET /static/blog/css/bootstrap.min.css HTTP/1.1" 200 117150
+[15/May/2019 15:50:27] "GET /static/blog/css/pace.css HTTP/1.1" 200 177
+[15/May/2019 15:50:28] "GET /static/blog/css/custom.css HTTP/1.1" 200 14654
+[15/May/2019 15:50:28] "GET /static/blog/js/jquery-2.1.3.min.js HTTP/1.1" 200 84319
+[15/May/2019 15:50:28] "GET /static/blog/js/bootstrap.min.js HTTP/1.1" 200 35452
+[15/May/2019 15:50:28] "GET /static/blog/js/pace.min.js HTTP/1.1" 200 12331
+[15/May/2019 15:50:28] "GET /static/blog/js/modernizr.custom.js HTTP/1.1" 200 8371
+[15/May/2019 15:50:28] "GET /static/blog/js/script.js HTTP/1.1" 200 4310
+Not Found: /favicon.ico
+[15/May/2019 15:50:29] "GET /favicon.ico HTTP/1.1" 404 2960
+[15/May/2019 15:50:33] "GET /post/1/ HTTP/1.1" 200 9148
+[15/May/2019 15:51:02] "GET /post/1/ HTTP/1.1" 200 9148
+[15/May/2019 15:51:04] "GET /post/1/ HTTP/1.1" 200 9148
+[15/May/2019 15:54:48] "GET / HTTP/1.1" 200 6771
+[15/May/2019 16:04:26] "GET /static/blog/css/custom.css HTTP/1.1" 200 14654
+[15/May/2019 16:04:26] "GET /static/blog/css/pace.css HTTP/1.1" 200 177
+[15/May/2019 16:04:26] "GET / HTTP/1.1" 200 6771
+[15/May/2019 16:04:26] "GET /static/blog/css/bootstrap.min.css HTTP/1.1" 200 117150
+[15/May/2019 16:04:26] "GET /post/1/ HTTP/1.1" 200 9148
+[15/May/2019 16:11:46] "GET /post/1/ HTTP/1.1" 200 9148
+[15/May/2019 16:11:46] "GET /static/blog/js/modernizr.custom.js HTTP/1.1" 304 0
+[15/May/2019 16:11:46] "GET /static/blog/js/script.js HTTP/1.1" 304 0
+[15/May/2019 16:11:46] "GET /static/blog/js/pace.min.js HTTP/1.1" 304 0
+[15/May/2019 16:11:46] "GET /static/blog/js/bootstrap.min.js HTTP/1.1" 304 0
+[15/May/2019 16:11:46] "GET /static/blog/js/jquery-2.1.3.min.js HTTP/1.1" 304 0
+[15/May/2019 16:11:49] "GET /archives/2019/5/ HTTP/1.1" 200 6771
+[15/May/2019 16:11:51] "GET /archives/2019/5/ HTTP/1.1" 200 6771
+[15/May/2019 16:11:51] "GET /static/blog/js/pace.min.js HTTP/1.1" 304 0
+[15/May/2019 16:11:51] "GET /static/blog/css/custom.css HTTP/1.1" 304 0
+[15/May/2019 16:11:51] "GET /static/blog/css/pace.css HTTP/1.1" 304 0
+[15/May/2019 16:11:51] "GET /static/blog/js/modernizr.custom.js HTTP/1.1" 304 0
+[15/May/2019 16:11:51] "GET /static/blog/css/bootstrap.min.css HTTP/1.1" 304 0
+[15/May/2019 16:11:51] "GET /static/blog/js/jquery-2.1.3.min.js HTTP/1.1" 304 0
+[15/May/2019 16:11:51] "GET /static/blog/js/bootstrap.min.js HTTP/1.1" 304 0
+[15/May/2019 16:11:51] "GET /static/blog/js/script.js HTTP/1.1" 304 0
+[15/May/2019 16:11:52] "GET /archives/2019/5/ HTTP/1.1" 200 6771
+[15/May/2019 16:11:52] "GET /static/blog/css/custom.css HTTP/1.1" 304 0
+[15/May/2019 16:11:52] "GET /static/blog/js/modernizr.custom.js HTTP/1.1" 304 0
+[15/May/2019 16:11:52] "GET /static/blog/css/bootstrap.min.css HTTP/1.1" 304 0
+[15/May/2019 16:11:52] "GET /static/blog/css/pace.css HTTP/1.1" 304 0
+[15/May/2019 16:11:52] "GET /static/blog/js/pace.min.js HTTP/1.1" 304 0
+[15/May/2019 16:11:52] "GET /static/blog/js/bootstrap.min.js HTTP/1.1" 304 0
+[15/May/2019 16:11:52] "GET /static/blog/js/script.js HTTP/1.1" 304 0
+[15/May/2019 16:11:52] "GET /static/blog/js/jquery-2.1.3.min.js HTTP/1.1" 304 0
+[15/May/2019 16:12:07] "GET /post/1/ HTTP/1.1" 200 9148
+[15/May/2019 16:17:08] "GET /admin HTTP/1.1" 301 0
+[15/May/2019 16:17:08] "GET /admin/ HTTP/1.1" 200 5721
+[15/May/2019 16:19:19] "GET /post/1/ HTTP/1.1" 200 9148
+[15/May/2019 16:19:24] "GET / HTTP/1.1" 200 6771
+[15/May/2019 16:20:26] "GET /admin/ HTTP/1.1" 200 5721
+[15/May/2019 16:20:30] "GET /admin/blog/post/ HTTP/1.1" 200 4336
+[15/May/2019 16:20:30] "GET /admin/jsi18n/ HTTP/1.1" 200 7722
+[15/May/2019 16:20:32] "GET /admin/blog/post/1/change/ HTTP/1.1" 200 11402
+[15/May/2019 16:20:32] "GET /admin/jsi18n/ HTTP/1.1" 200 7722
+[15/May/2019 16:20:56] "GET /admin/blog/category/add/?_to_field=id&_popup=1 HTTP/1.1" 200 3047
+[15/May/2019 16:20:56] "GET /admin/jsi18n/ HTTP/1.1" 200 7722
+----------------------------------------
+Exception happened during processing of request from ('223.73.111.80', 44911)
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/socketserver.py", line 651, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.6/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.6/socketserver.py", line 721, in __init__
+    self.handle()
+  File "/usr/local/lib/python3.6/dist-packages/django/core/servers/basehttp.py", line 171, in handle
+    self.handle_one_request()
+  File "/usr/local/lib/python3.6/dist-packages/django/core/servers/basehttp.py", line 179, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/lib/python3.6/socket.py", line 586, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+----------------------------------------
+[15/May/2019 16:21:09] "GET /admin/blog/post/1/history/ HTTP/1.1" 200 2486
+[15/May/2019 16:21:16] "GET /admin/blog/post/ HTTP/1.1" 200 4336
+[15/May/2019 16:21:16] "GET /admin/jsi18n/ HTTP/1.1" 200 7722
+[15/May/2019 16:21:17] "GET /admin/blog/ HTTP/1.1" 200 3253
+[15/May/2019 16:21:19] "GET /admin/ HTTP/1.1" 200 5721
+[15/May/2019 16:21:21] "GET /admin/auth/group/add/ HTTP/1.1" 200 7534
+[15/May/2019 16:21:22] "GET /admin/jsi18n/ HTTP/1.1" 200 7722
+[15/May/2019 16:21:22] "GET /static/admin/js/SelectBox.js HTTP/1.1" 200 5755
+[15/May/2019 16:21:22] "GET /static/admin/js/SelectFilter2.js HTTP/1.1" 200 12322
+[15/May/2019 16:21:22] "GET /static/admin/img/icon-unknown.svg HTTP/1.1" 200 655
+[15/May/2019 16:21:22] "GET /static/admin/img/selector-icons.svg HTTP/1.1" 200 3291
+[15/May/2019 16:21:22] "GET /static/admin/img/icon-unknown-alt.svg HTTP/1.1" 200 655
+[15/May/2019 16:21:22] "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+[15/May/2019 16:21:43] "GET /admin/auth/group/ HTTP/1.1" 200 3479
+[15/May/2019 16:21:43] "GET /admin/jsi18n/ HTTP/1.1" 200 7722
+[15/May/2019 16:21:45] "GET /admin/auth/ HTTP/1.1" 200 2877
+[15/May/2019 16:21:50] "GET /admin/auth/user/add/ HTTP/1.1" 200 5646
+[15/May/2019 16:21:50] "GET /admin/jsi18n/ HTTP/1.1" 200 7722
+[15/May/2019 16:21:59] "GET /admin/auth/ HTTP/1.1" 200 2877
+[15/May/2019 16:22:02] "GET /admin/ HTTP/1.1" 200 5721
+[15/May/2019 16:22:06] "GET /admin/auth/user/ HTTP/1.1" 200 6639
+[15/May/2019 16:22:06] "GET /admin/jsi18n/ HTTP/1.1" 200 7722
+[15/May/2019 16:22:06] "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+[15/May/2019 16:22:16] "GET /admin/auth/user/?is_superuser__exact=0 HTTP/1.1" 200 5243
+[15/May/2019 16:22:16] "GET /admin/jsi18n/ HTTP/1.1" 200 7722
+[15/May/2019 16:22:18] "GET /admin/auth/user/?is_superuser__exact=1 HTTP/1.1" 200 7119
+[15/May/2019 16:22:18] "GET /admin/jsi18n/ HTTP/1.1" 200 7722
+[15/May/2019 16:22:19] "GET /admin/auth/user/? HTTP/1.1" 200 6639
+[15/May/2019 16:22:19] "GET /admin/jsi18n/ HTTP/1.1" 200 7722
+[15/May/2019 16:22:21] "GET /admin/auth/ HTTP/1.1" 200 2877
+[15/May/2019 16:22:25] "GET /admin/auth/user/add/ HTTP/1.1" 200 5646
+[15/May/2019 16:22:25] "GET /admin/jsi18n/ HTTP/1.1" 200 7722
+[15/May/2019 16:23:10] "POST /admin/auth/user/add/ HTTP/1.1" 200 5809
+[15/May/2019 16:23:10] "GET /admin/jsi18n/ HTTP/1.1" 200 7722
+[15/May/2019 16:23:38] "POST /admin/auth/user/add/ HTTP/1.1" 302 0
+[15/May/2019 16:23:39] "GET /admin/auth/user/2/change/ HTTP/1.1" 200 14985
+[15/May/2019 16:23:39] "GET /admin/jsi18n/ HTTP/1.1" 200 7722
+[15/May/2019 16:24:28] "GET /post/1/ HTTP/1.1" 200 9148
+[15/May/2019 16:24:28] "GET /static/blog/css/bootstrap.min.css HTTP/1.1" 304 0
+[15/May/2019 16:24:28] "GET /static/blog/css/pace.css HTTP/1.1" 304 0
+[15/May/2019 16:24:28] "GET /static/blog/css/custom.css HTTP/1.1" 304 0
+[15/May/2019 16:24:28] "GET /static/blog/js/jquery-2.1.3.min.js HTTP/1.1" 304 0
+[15/May/2019 16:24:28] "GET /static/blog/js/bootstrap.min.js HTTP/1.1" 304 0
+[15/May/2019 16:24:28] "GET /static/blog/js/pace.min.js HTTP/1.1" 304 0
+[15/May/2019 16:24:28] "GET /static/blog/js/modernizr.custom.js HTTP/1.1" 304 0
+[15/May/2019 16:24:28] "GET /static/blog/js/script.js HTTP/1.1" 304 0
+[15/May/2019 16:24:32] "GET /category/1/ HTTP/1.1" 200 6771
+Not Found: /favicon.ico
+[15/May/2019 16:24:32] "GET /favicon.ico HTTP/1.1" 404 2960
+[15/May/2019 16:24:34] "GET /post/1/ HTTP/1.1" 200 9148
+Not Found: /favicon.ico
+[15/May/2019 16:24:34] "GET /favicon.ico HTTP/1.1" 404 2960
+[15/May/2019 16:24:43] "GET / HTTP/1.1" 200 6771
+Not Found: /favicon.ico
+[15/May/2019 16:24:43] "GET /favicon.ico HTTP/1.1" 404 2960
+[15/May/2019 16:25:22] "POST /admin/auth/user/2/change/ HTTP/1.1" 302 0
+[15/May/2019 16:25:22] "GET /admin/auth/user/ HTTP/1.1" 200 7230
+[15/May/2019 16:25:22] "GET /admin/jsi18n/ HTTP/1.1" 200 7722
+[15/May/2019 16:25:28] "GET /admin/logout/ HTTP/1.1" 200 1196
+[15/May/2019 16:25:30] "GET /admin/ HTTP/1.1" 302 0
+[15/May/2019 16:25:30] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 1821
+[15/May/2019 16:25:35] "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+[15/May/2019 16:25:36] "GET /admin/ HTTP/1.1" 200 3411
+[15/May/2019 16:25:36] "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+[15/May/2019 16:25:38] "GET /admin/blog/tag/add/ HTTP/1.1" 200 3954
+[15/May/2019 16:25:38] "GET /admin/jsi18n/ HTTP/1.1" 200 7722
+[15/May/2019 16:25:42] "GET /admin/blog/tag/ HTTP/1.1" 200 3415
+[15/May/2019 16:25:46] "GET /admin/blog/tag/1/change/ HTTP/1.1" 200 3827
+[15/May/2019 16:25:46] "GET /admin/jsi18n/ HTTP/1.1" 200 7722
+[15/May/2019 16:25:48] "GET /admin/blog/tag/ HTTP/1.1" 200 3415
+[15/May/2019 16:25:51] "GET /admin/blog/ HTTP/1.1" 200 3255
+[15/May/2019 16:25:54] "GET /admin/blog/post/ HTTP/1.1" 200 3452
+[15/May/2019 16:25:57] "GET /admin/blog/post/1/change/ HTTP/1.1" 200 10537
+[15/May/2019 16:25:57] "GET /admin/jsi18n/ HTTP/1.1" 200 7722
+[15/May/2019 16:26:01] "GET /admin/ HTTP/1.1" 200 3411
+[15/May/2019 16:26:07] "GET /admin/logout/ HTTP/1.1" 200 1196
+[15/May/2019 16:26:11] "GET /admin/ HTTP/1.1" 302 0
+[15/May/2019 16:26:11] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 1821
+----------------------------------------
+Exception happened during processing of request from ('58.60.1.28', 45692)
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/socketserver.py", line 651, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.6/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.6/socketserver.py", line 721, in __init__
+    self.handle()
+  File "/usr/local/lib/python3.6/dist-packages/django/core/servers/basehttp.py", line 169, in handle
+    self.handle_one_request()
+  File "/usr/local/lib/python3.6/dist-packages/django/core/servers/basehttp.py", line 179, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/lib/python3.6/socket.py", line 586, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+----------------------------------------
+[15/May/2019 16:26:16] "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+[15/May/2019 16:26:16] "GET /admin/ HTTP/1.1" 200 6284
+[15/May/2019 16:26:19] "GET /admin/auth/user/ HTTP/1.1" 200 7068
+[15/May/2019 16:26:19] "GET /admin/jsi18n/ HTTP/1.1" 200 7722
+[15/May/2019 16:26:23] "GET /admin/auth/user/2/change/ HTTP/1.1" 200 14987
+[15/May/2019 16:26:23] "GET /admin/jsi18n/ HTTP/1.1" 200 7722
+[15/May/2019 16:27:06] "POST /admin/auth/user/2/change/ HTTP/1.1" 302 0
+[15/May/2019 16:27:06] "GET /admin/auth/user/ HTTP/1.1" 200 7230
+[15/May/2019 16:27:06] "GET /admin/jsi18n/ HTTP/1.1" 200 7722
+[15/May/2019 16:27:11] "GET /admin/auth/user/1/change/ HTTP/1.1" 200 14860
+[15/May/2019 16:27:12] "GET /admin/jsi18n/ HTTP/1.1" 200 7722
+[15/May/2019 16:27:33] "POST /admin/auth/user/1/change/ HTTP/1.1" 302 0
+[15/May/2019 16:27:33] "GET /admin/auth/user/ HTTP/1.1" 200 7227
+[15/May/2019 16:27:33] "GET /admin/jsi18n/ HTTP/1.1" 200 7722
+[15/May/2019 16:27:37] "GET / HTTP/1.1" 200 6771
+[15/May/2019 16:44:11] "GET / HTTP/1.1" 200 6771
+[15/May/2019 16:44:48] "GET / HTTP/1.1" 200 6771
+[15/May/2019 16:55:34] "GET /admin HTTP/1.1" 301 0
+[15/May/2019 16:55:35] "GET /admin/ HTTP/1.1" 200 6850
+[15/May/2019 16:55:35] "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+[15/May/2019 16:55:35] "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+[15/May/2019 16:55:35] "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[15/May/2019 16:55:35] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+[15/May/2019 16:55:35] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+[15/May/2019 16:55:35] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+[15/May/2019 16:55:39] "GET /admin/blog/post/ HTTP/1.1" 200 4339
+[15/May/2019 16:55:39] "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+[15/May/2019 16:55:39] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+[15/May/2019 16:55:39] "GET /admin/jsi18n/ HTTP/1.1" 200 7722
+[15/May/2019 16:55:39] "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+[15/May/2019 16:55:39] "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+[15/May/2019 16:55:39] "GET /static/admin/js/core.js HTTP/1.1" 304 0
+[15/May/2019 16:55:39] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+[15/May/2019 16:55:39] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+[15/May/2019 16:55:39] "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+[15/May/2019 16:55:40] "GET /admin/blog/post/1/change/ HTTP/1.1" 200 11442
+[15/May/2019 16:55:40] "GET /admin/jsi18n/ HTTP/1.1" 200 7722
+[15/May/2019 16:55:40] "GET /static/admin/js/calendar.js HTTP/1.1" 304 0
+[15/May/2019 16:55:40] "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+[15/May/2019 16:55:41] "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 304 0
+[15/May/2019 16:55:41] "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+[15/May/2019 16:55:41] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+[15/May/2019 16:55:41] "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+[15/May/2019 16:55:41] "GET /static/admin/img/calendar-icons.svg HTTP/1.1" 304 0
+[15/May/2019 16:55:41] "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 304 0
+[15/May/2019 16:55:41] "GET /static/admin/img/icon-clock.svg HTTP/1.1" 304 0
+[15/May/2019 16:55:59] "POST /admin/blog/post/1/change/ HTTP/1.1" 302 0
+[15/May/2019 16:55:59] "GET /admin/blog/post/ HTTP/1.1" 200 4523
+[15/May/2019 16:55:59] "GET /admin/jsi18n/ HTTP/1.1" 200 7722
+[15/May/2019 16:56:02] "GET / HTTP/1.1" 200 6771
+[15/May/2019 16:56:04] "GET /post/1/ HTTP/1.1" 200 9135
+----------------------------------------
+Exception happened during processing of request from ('223.73.111.80', 51741)
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/socketserver.py", line 651, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.6/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.6/socketserver.py", line 721, in __init__
+    self.handle()
+  File "/usr/local/lib/python3.6/dist-packages/django/core/servers/basehttp.py", line 171, in handle
+    self.handle_one_request()
+  File "/usr/local/lib/python3.6/dist-packages/django/core/servers/basehttp.py", line 179, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/lib/python3.6/socket.py", line 586, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+----------------------------------------
+----------------------------------------
+Exception happened during processing of request from ('223.73.111.80', 51757)
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/socketserver.py", line 651, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.6/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.6/socketserver.py", line 721, in __init__
+    self.handle()
+  File "/usr/local/lib/python3.6/dist-packages/django/core/servers/basehttp.py", line 171, in handle
+    self.handle_one_request()
+  File "/usr/local/lib/python3.6/dist-packages/django/core/servers/basehttp.py", line 179, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/lib/python3.6/socket.py", line 586, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+----------------------------------------
+----------------------------------------
+Exception happened during processing of request from ('223.73.111.80', 51742)
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/socketserver.py", line 651, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.6/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.6/socketserver.py", line 721, in __init__
+    self.handle()
+  File "/usr/local/lib/python3.6/dist-packages/django/core/servers/basehttp.py", line 171, in handle
+    self.handle_one_request()
+  File "/usr/local/lib/python3.6/dist-packages/django/core/servers/basehttp.py", line 179, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/lib/python3.6/socket.py", line 586, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+----------------------------------------
+----------------------------------------
+Exception happened during processing of request from ('223.73.111.80', 51759)
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/socketserver.py", line 651, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.6/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.6/socketserver.py", line 721, in __init__
+    self.handle()
+  File "/usr/local/lib/python3.6/dist-packages/django/core/servers/basehttp.py", line 171, in handle
+    self.handle_one_request()
+  File "/usr/local/lib/python3.6/dist-packages/django/core/servers/basehttp.py", line 179, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/lib/python3.6/socket.py", line 586, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+----------------------------------------
+----------------------------------------
+Exception happened during processing of request from ('223.73.111.80', 51743)
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/socketserver.py", line 651, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.6/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.6/socketserver.py", line 721, in __init__
+    self.handle()
+  File "/usr/local/lib/python3.6/dist-packages/django/core/servers/basehttp.py", line 171, in handle
+    self.handle_one_request()
+  File "/usr/local/lib/python3.6/dist-packages/django/core/servers/basehttp.py", line 179, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/lib/python3.6/socket.py", line 586, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+----------------------------------------
+[15/May/2019 17:27:06] "GET / HTTP/1.1" 200 6771
+[15/May/2019 17:39:04] "GET / HTTP/1.1" 200 6771
+[15/May/2019 17:43:01] "GET / HTTP/1.1" 200 6771
+[15/May/2019 17:48:29] "GET / HTTP/1.1" 200 6771
+Not Found: /robots.txt
+[15/May/2019 17:48:31] "GET /robots.txt HTTP/1.1" 404 2957
+----------------------------------------
+Exception happened during processing of request from ('94.102.49.193', 59558)
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/socketserver.py", line 651, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.6/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.6/socketserver.py", line 721, in __init__
+    self.handle()
+  File "/usr/local/lib/python3.6/dist-packages/django/core/servers/basehttp.py", line 171, in handle
+    self.handle_one_request()
+  File "/usr/local/lib/python3.6/dist-packages/django/core/servers/basehttp.py", line 179, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/lib/python3.6/socket.py", line 586, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+----------------------------------------
+[15/May/2019 18:04:20] "GET / HTTP/1.1" 200 6771
+Performing system checks...
+
+System check identified no issues (0 silenced).
+May 15, 2019 - 11:44:29
+Django version 2.2.1, using settings 'AAA_blog.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
